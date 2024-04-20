@@ -23,7 +23,7 @@ def get_config(default_file):
     p.add_argument('config_file', metavar='PATH', nargs='+',
                    help='path to a configuration file')
     arg = p.parse_args()
-
+#    arg.config_file = ['F:\Quantization\lsq-net\ResNet20_Cifar10_a2w2.yaml']
     with open(default_file) as yaml_file:
         cfg = yaml.safe_load(yaml_file)
 

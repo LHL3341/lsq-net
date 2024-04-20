@@ -9,6 +9,11 @@ import quan
 import util
 from model import create_model
 
+import random
+
+seed = 1
+random.seed(seed)
+t.manual_seed(seed)
 
 def main():
     script_dir = Path.cwd()
